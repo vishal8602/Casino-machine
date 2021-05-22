@@ -1,0 +1,68 @@
+:root
+{
+	--speed: 1;
+}
+
+.Machine{
+	background-color: plum;
+	height: 600px;
+	width: 900px; 
+	margin: 50px;
+	margin-left: 350px;
+	border-radius: 50px;
+	box-shadow: 20px 20px;
+	display: flex;
+	justify-content:center;
+	flex-wrap: wrap;
+	overflow: hidden;
+	
+}
+.slot{
+	background-color: paleturquoise;
+	height: 200px;
+    width: 200px;
+	margin: 20px;
+	border-radius: 50px;
+	text-align: center;
+	font-size: 70px;
+	overflow: hidden;
+
+}
+
+.input{
+	background-color: purple;
+	height: 100px;
+    width: 100px;
+	margin: 20px;
+	border-radius: 50px;
+	text-align: center;
+	font-size: 70px;
+	overflow: hidden;
+}
+.button
+{
+	background-color: purple;
+	height: 70px;
+    width: 70px;
+	margin: 0px;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 30px;
+	overflow: hidden;
+}
+.slotinside{
+	animation-name : slide ;
+    animation-iteration-count: infinite;
+    animation-duration: calc(1s / var(--speed));
+    animation-play-state: paused;
+
+}
+@keyframes slide{
+    0%{
+    	transform: translateY(-100px);
+    }
+
+     100%{
+     	transform: translateY(200px);
+     }
+}
